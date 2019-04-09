@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import { Hashrouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import routes from "./routes";
 
 export default class App extends Component {
   render() {
     return (
-      <Hashrouter>
+      <HashRouter>
         <div>
           <nav className="nav">
             <div>WestSide University</div>
@@ -16,7 +16,7 @@ export default class App extends Component {
           </nav>
           {routes}
         </div>
-      </Hashrouter>
+      </HashRouter>
     );
   }
 }
